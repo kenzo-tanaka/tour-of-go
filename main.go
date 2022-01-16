@@ -4,7 +4,6 @@ import "fmt"
 
 func main() {
 	i := 42
-
-	p := &i
-	fmt.Println(p)
+	pointer := &i
+	fmt.Println(pointer)
 }
