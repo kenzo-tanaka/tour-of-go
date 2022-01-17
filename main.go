@@ -25,4 +25,11 @@ func main() {
 	p := &v
 	p.X = 1e9
 	fmt.Println(v)
+
+	// https://go-tour-jp.appspot.com/moretypes/6
+	// 配列は定義時に長さを設定する
+	var array [2]string
+	array[0] = "Kenzo"
+	array[1] = "Tanaka"
+	fmt.Println(array)
 }
