@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+type Vertext struct {
+	X int
+	Y int
+}
+
 func main() {
 	i := 5
 	pointer := &i
@@ -11,4 +16,13 @@ func main() {
 	// ポインタが指す変数の値を直接変更することができる
 	*pointer = 21
 	fmt.Println(i)
+
+	// https://go-tour-jp.appspot.com/moretypes/2
+	fmt.Println(Vertext{1, 2})
+
+	// https://go-tour-jp.appspot.com/moretypes/4
+	v := Vertext{X: 1}
+	p := &v
+	p.X = 1e9
+	fmt.Println(v)
 }
